@@ -1,5 +1,7 @@
 package tut6;
 
+import org.junit.Assert;
+
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -33,6 +35,8 @@ public class AppTest
      */
     public void testApp()
     {
-        assertTrue( true );
+    	
+    	    int result = Calc.add(1, 2);
+            Assert.assertEquals(3, result);
     }
 }
